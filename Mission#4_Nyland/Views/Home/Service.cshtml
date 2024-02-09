@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Service";
+}
+
+<h1 style="text-align:center">Tutoring Services Calculator</h1>
+
+<form style="text-align:center">
+    <label for="hours">Number of Hours Needed:</label>
+    <input type="number" id="hours" min="1"/>
+    <br /><br />
+    <label for="hourly-rate">Hourly Rate:</label>
+    <input type="text" id="hourly-rate" value="$60" disabled />
+    <br /><br />
+    <button id="calcbtn">Calculate Total</button>
+    <br /><br />
+    <label for="total">Total:</label>
+    <input type="text" id="total" readonly/>
+    <br /><br />
+
+    <div class="container">
+        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    </div>
+</form>
